@@ -22,7 +22,11 @@ The script sends a URL to an existing analyzer. Resource setup, model deployment
 
 ## Playground example
 
-The Foundry Content Understanding playground was used with the Document modality and OCR/Read task. Its capture contains personal contact information in the document preview, so it is not included in this public repository. Use a synthetic or redacted document for shareable screenshots.
+The Foundry Content Understanding playground was used to analyze a document with the **Document** modality and **OCR/Read** task. The screenshots below are included as project evidence.
+
+![Content Understanding playground running OCR/Read on a document](content-understanding-ocr-playground.png)
+
+![Microsoft Foundry project home](foundry-project-home.png)
 
 ## Example input
 
