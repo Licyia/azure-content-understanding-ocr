@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="title desc">
+  <title id="title">Azure AI Content Understanding OCR architecture</title>
+  <desc id="desc">A Python client authenticates through Microsoft Entra ID to Azure Content Understanding, analyzes a document URL with a configured OCR analyzer, and prints extracted results.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#101827"/><stop offset="1" stop-color="#18263b"/></linearGradient>
+    <linearGradient id="accent" x1="0" x2="1"><stop stop-color="#7762ff"/><stop offset="1" stop-color="#26b7c8"/></linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5 0 10z" fill="#9caed0"/></marker>
+    <style>.title{font:700 28px system-ui,sans-serif;fill:#f7f8fc}.sub{font:15px system-ui,sans-serif;fill:#aab6ca}.head{font:700 18px system-ui,sans-serif;fill:#fff}.body{font:14px system-ui,sans-serif;fill:#cbd5e3}.small{font:12px system-ui,sans-serif;fill:#aab6ca}.line{stroke:#9caed0;stroke-width:2;fill:none;marker-end:url(#arrow)}</style>
+  </defs>
+  <rect width="1200" height="470" rx="26" fill="url(#bg)"/>
+  <text x="56" y="62" class="title">Document understanding workflow</text>
+  <text x="56" y="91" class="sub">Python CLI → Microsoft Entra ID → Azure AI Content Understanding → JSON</text>
+  <rect x="58" y="165" width="215" height="155" rx="18" fill="#202f45" stroke="#40516a"/>
+  <text x="82" y="205" class="head">1 · Input</text><text x="82" y="239" class="body">Document URL</text><text x="82" y="266" class="body">PDF or image</text><text x="82" y="296" class="small">Provided at run time</text>
+  <rect x="350" y="165" width="225" height="155" rx="18" fill="#202f45" stroke="#40516a"/>
+  <text x="374" y="205" class="head">2 · Python CLI</text><text x="374" y="239" class="body">Validate settings</text><text x="374" y="266" class="body">Authenticate with Entra ID</text><text x="374" y="296" class="small">DefaultAzureCredential</text>
+  <rect x="650" y="145" width="265" height="195" rx="22" fill="#222544" stroke="url(#accent)" stroke-width="2"/>
+  <text x="678" y="190" class="head">3 · Azure Content</text><text x="678" y="215" class="head">Understanding</text><text x="678" y="256" class="body">Configured OCR analyzer</text><text x="678" y="283" class="body">Text + layout extraction</text><text x="678" y="316" class="small">Resource and model deployment</text>
+  <rect x="990" y="165" width="165" height="155" rx="18" fill="#202f45" stroke="#40516a"/>
+  <text x="1014" y="205" class="head">4 · Output</text><text x="1014" y="239" class="body">Extracted text</text><text x="1014" y="266" class="body">JSON result</text><text x="1014" y="296" class="small">Printed in terminal</text>
+  <path d="M273 242H340" class="line"/><path d="M575 242H640" class="line"/><path d="M915 242H980" class="line"/>
+  <text x="58" y="405" class="small">Credentials and endpoint are provided locally through environment variables; no secrets are stored in the repository.</text>
+</svg>
